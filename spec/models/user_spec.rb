@@ -6,6 +6,6 @@ RSpec.describe User, type: :model do
 	it { is_expected.to validate_presence_of(:email) }
 	it { is_expected.to validate_presence_of(:email) }
 	it { is_expected.to validate_confirmation_of(:password) }
-	it { is_expected.to allow_value("wilfrank84@gmail.com").for(:email) }
+	it { is_expected.to allow_value('wilfrank84@gmail.com').for(:email) }
 
 end
