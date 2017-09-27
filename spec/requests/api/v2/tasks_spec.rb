@@ -4,7 +4,7 @@ RSpec.describe 'Task API' do
 	before { host! 'api.taskmanager.dev' }
 
 	let!(:user) { create(:user) }
-	let(:auth_data) { user.create_new_auth_token }
+	let!(:auth_data) { user.create_new_auth_token }
 	let(:headers) do
 		{
 			'Content-Type' => Mime[:json].to_s,
